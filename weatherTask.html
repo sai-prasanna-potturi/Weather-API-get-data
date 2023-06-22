@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather Task</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='weatherStyle.css'>
+    <script src='weatherTask.js'></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="weather-total-container">
+    <h1 class="check-weather">check weather<ion-icon class="arror-icon" name="cloud-download"></ion-icon></h1>
+    <p class="today-date" id="toadayDate"></p>
+    <button class="weather-btn" id="weather-url" onclick="weatherUpload()">Upload</button>
+    <button class="refresh-btn" id="refresh-url" onclick="pageReload()">Refresh</button>
+    <div id="Weather_details_display"></div>
+  </div>
+</body>
+</html>
